@@ -303,6 +303,9 @@ REMOTE_AUTH_SUPERUSER_GROUPS = _environ_get_and_map('REMOTE_AUTH_SUPERUSER_GROUP
 REMOTE_AUTH_SUPERUSERS = _environ_get_and_map('REMOTE_AUTH_SUPERUSERS', '', _AS_LIST)
 REMOTE_AUTH_STAFF_GROUPS = _environ_get_and_map('REMOTE_AUTH_STAFF_GROUPS', '', _AS_LIST)
 REMOTE_AUTH_STAFF_USERS = _environ_get_and_map('REMOTE_AUTH_STAFF_USERS', '', _AS_LIST)
+# Single Sign-on Support
+SOCIAL_AUTH_AZUREAD_OAUTH2_KEY = environ.get('SOCIAL_AUTH_AZUREAD_OAUTH2_KEY')
+SOCIAL_AUTH_AZUREAD_OAUTH2_SECRET = environ.get('SOCIAL_AUTH_AZUREAD_OAUTH2_SECRET')
 
 # This repository is used to check whether there is a new release of NetBox available. Set to None to disable the
 # version check or use the URL below to check for release in the official NetBox repository.
